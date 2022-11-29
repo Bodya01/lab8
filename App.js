@@ -1,11 +1,15 @@
 import { StatusBar } from 'expo-status-bar';
+import { useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import Accel from './Accel';
+import Magnem from './Magnem';
+
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <Accel/>
+      <Magnem/>
     </View>
   );
 }
